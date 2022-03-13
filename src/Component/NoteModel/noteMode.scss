@@ -1,0 +1,86 @@
+.model{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(46, 37, 37, 0.678);
+    
+    &-note{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-close{
+            position: absolute;
+            top: 0%;
+            right: 2%;
+            font-size: 3rem;
+            transform: rotate(45deg);
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            cursor: pointer;
+        }
+        &-title{
+            width: 80%;
+            background-color: white;
+            padding: 10px;
+            border-radius: 30px;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            input{
+               font-size: 1.1rem;
+               padding: 0px 5px;
+                width: 98%;
+                outline: none;
+                border: none;
+            }
+
+        }
+        &-body{
+            margin-top: 10px;
+            max-width: 80%;
+            background-color: white;
+            padding: 5px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            textarea{
+                border: none;
+                outline: none;
+                max-width: 99%;
+                resize: none;
+                font-size: 1.1rem;
+                
+            }
+        }
+        form{
+            position: relative;
+            z-index: 1;
+            height: 70%;
+            width: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+           border-radius: 15px;
+           button{
+               transition: all 0.2s ease;
+               color: white;
+               font-size: 1.2rem;
+               cursor: pointer;
+               padding: 10px 20px;
+               border-radius: 5px;
+               margin-top: 30px;
+               background-color: #ff97a8;
+               border: none;
+               outline: none;
+               box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+               &:hover{
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+               }
+               
+           }
+        }
+        
+    }
+}

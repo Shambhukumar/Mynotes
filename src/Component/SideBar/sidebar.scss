@@ -1,0 +1,34 @@
+.sidebar{
+    width: 20%;
+    height: 100vh;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-user{
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img{
+            object-fit: cover;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin: 20px 0px;
+        }
+        margin-bottom: 20px;
+    }
+    &-settings,&-help,&-backup,&-supoart{
+        width: 60%;
+        display: flex;
+        font-size: 1.5rem;
+        margin: 10px 0px;
+        cursor: pointer;
+        img{
+            margin-right: 18%;
+            width: 25px;
+        }
+    }
+
+}

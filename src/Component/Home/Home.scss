@@ -1,0 +1,124 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(218, 218, 218);
+    width: 80%;
+    height: 100vh;
+    position: relative;
+    &-head{
+        height: 12%;
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        align-items: center;
+        h1{
+            font-family: 'Smooch', cursive;
+        }
+        &-search{
+            width: 40%;
+            border-radius: 20px;
+            padding: 12px 15px;
+            background-color: white;
+            input{
+                outline: none;
+                border: none;
+                width: 100%;
+            }
+        }
+        &-option{
+            display: flex;
+            align-items: center;
+            span{
+                margin-right: 10px;
+            }
+            select{
+                padding: 8px;
+                border-radius: 20px;
+                border: none;
+                option{
+                    border: none;
+                    outline: none;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+    &-notes{
+        height: 70%;
+        width: 85%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2%;
+    }
+    form{
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        input{
+            margin-bottom: 5px;
+            padding: 5px;
+            font-size: 1.2rem;
+        }
+        button{
+            padding: 10px;
+            cursor: pointer;
+        }
+    }
+    &-btn{
+        display: flex;
+        justify-content: space-between;
+        width: 150px;
+        span{
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            background-color: rgb(243, 243, 243);
+            cursor: pointer;
+            &:hover{
+                box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+            }
+        }
+    }
+    &-addNote{
+        font-size: 1.4rem;
+        color: #ffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 5%;
+        right: 5%;
+        background-color: rgb(255, 151, 168);
+        width: 200px;
+        height: 60px;
+        border-radius: 30px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transition: all 0.2s ease;
+        cursor: pointer;
+        span{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem !important;
+            width: 35px;
+            height: 35px;
+            color: rgb(255, 151, 168);
+            border-radius: 50%;
+            background-color: white;
+            margin-right: 10px;
+        }
+        &:hover{
+            transform: scale(1.1);
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+    }
+}
