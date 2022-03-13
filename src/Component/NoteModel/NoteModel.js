@@ -3,22 +3,26 @@ import ReactDOM from "react-dom";
 import { CreateNote, UpdateNote } from "../Firebase/FirbaseConnector";
 import toast,{Toaster} from "react-hot-toast";
 import "./noteMode.scss";
-const red = Math.floor(((1 + Math.random()) * 256) / 2);
-const green = Math.floor(((1 + Math.random()) * 256) / 2);
-const blue = Math.floor(((1 + Math.random()) * 256) / 2);
-const color = "rgb(" + red + ", " + green + ", " + blue + ")";
+
 const NoteModel = (props) => {
   const { data } = props;
   console.log(props)
   const [title, setTitle] = useState("");
   const [body, setbody] = useState("");
+  const [color, setColor]= useState("");
  
 
   useEffect(() => {
+    const red = Math.floor(((1 + Math.random()) * 256) / 2);
+    const green = Math.floor(((1 + Math.random()) * 256) / 2);
+    const blue = Math.floor(((1 + Math.random()) * 256) / 2);
+    const c = "rgb(" + red + ", " + green + ", " + blue + ")";
     if (data) {
       setTitle(data.note.title)
       setbody(data.note.body)
+      
     }
+    setColor(c)
   }, []);
 
   const handleSubmit = (e) => {
